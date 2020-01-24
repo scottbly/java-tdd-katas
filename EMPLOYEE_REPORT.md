@@ -26,7 +26,7 @@
     
 &nbsp;    
 
-**Requirement -** Sort report by hire date, preferring Employees with seniority
+**Requirement -** Sort report by date of hire, preferring Employees with seniority
 
 &nbsp;    
     
@@ -45,13 +45,7 @@
 &nbsp;  
 
 **Requirement -** The shop is closed on Wednesdays. If a report is requested for Wednesday, an error should be thrown with message like "Closed on Wednesdays"
-    
-&nbsp;    
-    
-&nbsp;  
-
-**Requirement -** The shop is considering opening on Wednesdays. Enhance the report so the Wednesday error message includes Employees who would have the day off like "Closed on Wednesdays, Bob and Jim would not be working"
-    
+     
 &nbsp;    
     
 &nbsp;  
@@ -62,4 +56,10 @@
     
 &nbsp;  
 
-**Requirement -** The shop is now staying open 10 hours on weekends. Employees under 18 cannot make more than $100 a day for tax reasons. If they would make more, do not schedule them for that day.
+**Requirement -** The shop is now staying open 10 hours on weekends (8 hours on week days). Employees under 18 cannot make more than $100 a day for tax reasons. If they would make more, do not schedule them for that day.
+
+&nbsp;    
+    
+&nbsp;  
+
+**Requirement -** The shop is considering opening on Wednesdays. Enhance the report so the Wednesday error message includes Employees who would have the day off like "Closed on Wednesdays, if we were open Bob and Jim would not be working"

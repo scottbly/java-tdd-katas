@@ -6,26 +6,26 @@ import java.time.LocalDate;
 import static java.time.DayOfWeek.*;
 
 public enum Employee {
-    Max(LocalDate.of(2003, 1, 1), THURSDAY, LocalDate.of(2018, 1, 1), "8.00"),
-    Sepp(LocalDate.of(2001, 1, 1), TUESDAY, LocalDate.of(2016, 1, 1), "10.00"),
-    Tom(LocalDate.of(2000, 1, 1), WEDNESDAY, LocalDate.of(2019, 1, 1), "20.00"),
-    Nina(LocalDate.of(2005, 1, 1), WEDNESDAY, LocalDate.of(2019, 1, 1), "11.50"),
-    Mike(LocalDate.of(1970, 1, 1), SATURDAY, LocalDate.of(2010, 1, 1), "30.00");
+    Max(17, THURSDAY, LocalDate.of(2018, 1, 1), "$8.00"),
+    Sepp(19, TUESDAY, LocalDate.of(2016, 1, 1), "$10.00"),
+    Tom(20, WEDNESDAY, LocalDate.of(2019, 1, 1), "$20.00"),
+    Nina(15, WEDNESDAY, LocalDate.of(2019, 1, 1), "$11.50"),
+    Mike(30, SATURDAY, LocalDate.of(2010, 1, 1), "$30.00");
 
-    Employee(LocalDate dateOfBirth, DayOfWeek dayOff, LocalDate hireDate, String salary) {
-        this.dateOfBirth = dateOfBirth;
+    Employee(int age, DayOfWeek dayOff, LocalDate hireDate, String salary) {
+        this.age = age;
         this.dayOff = dayOff;
         this.hireDate = hireDate;
         this.salary = salary;
     }
 
-    private LocalDate dateOfBirth;
+    private int age;
     private DayOfWeek dayOff;
     private LocalDate hireDate;
     private String salary;
 
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
+    public int getAge() {
+        return age;
     }
 
     public DayOfWeek getDayOff() {
@@ -38,6 +38,14 @@ public enum Employee {
 
     public String getSalary() {
         return salary;
+    }
+
+    public static class EmployeeDatabase {
+
+        static Employee[] getEmployees() {
+            return Employee.values();
+        }
+
     }
 
 }
