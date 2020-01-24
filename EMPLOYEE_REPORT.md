@@ -63,3 +63,11 @@
 &nbsp;  
 
 **Requirement -** The shop is considering opening on Wednesdays. Enhance the report so the Wednesday error message includes Employees who would have the day off like "Closed on Wednesdays, if we were open Bob and Jim would not be working"
+
+&nbsp;    
+    
+&nbsp;  
+
+**Requirement -** The shop is scheduling too many Employees. Enhance the report method to take in a maximum salary for the day for all Employees. Schedule as many Employees as you can while staying under the daily salary cap. 
+
+Example: If scheduling for Tuesday with no alcohol sales and a salary cap of $350, Max, Tom, and Nina should be scheduled. For existing tests you can default the salary cap to $999.

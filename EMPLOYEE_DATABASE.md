@@ -1,4 +1,4 @@
-| Employee | Age | Date of Hire | Day Off   | Hourly Pay |
+| Employee | Age | Date of Hire | Day Off   | Hourly Salary |
 |----------|-----|--------------|-----------|-------------|
 | Mike     | 30  | 01-01-2010   | Saturday  | $30.00      |
 | Tom      | 20  | 01-01-2019   | Wednesday | $20.00      |

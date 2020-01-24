@@ -6,11 +6,11 @@ import java.time.LocalDate;
 import static java.time.DayOfWeek.*;
 
 public enum Employee {
-    Max(17, THURSDAY, LocalDate.of(2018, 1, 1), "$8.00"),
-    Sepp(19, TUESDAY, LocalDate.of(2016, 1, 1), "$10.00"),
-    Tom(20, WEDNESDAY, LocalDate.of(2019, 1, 1), "$20.00"),
-    Nina(15, WEDNESDAY, LocalDate.of(2019, 1, 1), "$11.50"),
-    Mike(30, SATURDAY, LocalDate.of(2010, 1, 1), "$30.00");
+    Max(17, THURSDAY, LocalDate.of(2018, 1, 1), "8.00"),
+    Sepp(19, TUESDAY, LocalDate.of(2016, 1, 1), "10.00"),
+    Tom(20, WEDNESDAY, LocalDate.of(2019, 1, 1), "20.00"),
+    Nina(15, WEDNESDAY, LocalDate.of(2019, 1, 1), "11.50"),
+    Mike(30, SATURDAY, LocalDate.of(2010, 1, 1), "30.00");
 
     Employee(int age, DayOfWeek dayOff, LocalDate hireDate, String salary) {
         this.age = age;
